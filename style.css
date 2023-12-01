@@ -1,0 +1,703 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body_chang{
+    font-family: 'Lora', serif;
+    background-color:black;
+}
+.baner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-solid{
+    font-size: 2rem;
+    opacity: 0;
+    color: white;
+    position: absolute;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.navbar ul li::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background-color: dodgerblue;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    text-align: center;
+    color: wheat;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid dodgerblue;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+}
+span{
+    background-color: dodgerblue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+ }
+
+ /* component of list  */
+
+ .component{
+    width: 100%;
+    padding: 5px;
+    background-color: grey;
+    overflow: hidden;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.compoBox{
+    width: 24.3%;
+    height: 23rem;
+    /* background-color: black; */
+    float: left;
+    margin: 5px;
+    border-radius: 4rem 0 4rem 0;
+    overflow: hidden;
+}
+.compoBox h2{
+    margin-top: 1rem;
+    position: absolute;
+    color: red;
+}
+.compoBox h3{
+    position: absolute;
+    margin-top: 4rem;
+    color: rgb(0, 32, 138);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.discount{
+    width: 4rem;
+    height: 4rem;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.compoBox img{
+    width: 100%;
+    height: 100%;
+}
+.marginleft{
+    margin-left: 2rem;
+}
+
+/* Discription a bout component new  */
+
+.discripNew{
+    width: 79%;
+    overflow: hidden;
+    /* background-color: black; */
+    margin: auto;
+    color: white;
+    padding-top:0.2rem;
+    /* box-shadow: 0 0 5px dodgerblue; */
+}
+.discripNew p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/* controllnew of list compoent  */
+.controllnew{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    background-color: black;
+    margin-top: 2px;
+}
+.newProduct{
+    width: 32.1%;
+    height: 25rem;
+    /* background-color: black; */
+    float: left;
+    margin: 7px;
+    padding: 5px;
+    box-shadow: 0 0 5px dodgerblue;
+}
+.newphoto{
+    width: 100%;
+    height: 65%;
+}
+.newphoto img{
+    width: 100%;
+    height: 100%;
+}
+.newprice{
+    width: 100%;
+    height: 10%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.newprice h3{
+    color: white;
+}
+.newprice h3 p{
+    margin-left:1rem;
+    color: red;
+}
+.newdescription{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+}
+.newdescription h3{
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* show button  */
+
+.btn{
+    width: 13rem;
+    /* height: 4rem; */
+    /* background-color: black; */
+    position: relative;
+    margin: auto;
+}
+.btn button{
+    color: white;
+    font-size: 1rem;
+}
+
+/* ..............picturesaler................  */
+
+.pictureSaler{
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem;
+}
+.pictureBox{
+    width: 48.5%;
+    height: 22rem;
+    background-color: grey;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5rem;
+    padding: 5px;
+}
+
+.pictureBox h3{
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    background-color: rgba(1, 3, 3, 0.596);
+    color: rgba(255, 255, 255, 0.792);
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+/* <!-- Picture on fack book   --> */
+
+.pictureFackbook{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    background-color: black;
+}
+.picturefb{
+    width: 32.5%;
+    height: 20rem;
+    background-color: aqua;
+    margin: 5px;
+    box-shadow: 0 0 5px dodgerblue;
+    float: left;
+}
+.picturefb img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* footer  */
+
+.controll_footer{
+    width: 100%;
+    height: 20rem;
+    margin-top: 1rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 80%;
+    height: 100%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+
+}
+.box_footer{
+    width: 40%;
+    height: 100%;
+    padding: 2rem;
+    /* background-color: rgb(225, 171, 171); */
+}
+.box_footer h3{
+    font-size: 24px;
+    color: white;
+    padding: 0.5rem;
+}
+.box_footer P{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+.fab,.fas{
+    font-size: 2rem;
+    /* margin: 1.5rem; */
+    padding-top: 4rem;
+    color: rgb(87, 100, 249);
+    margin: 0 3rem 0 0rem;
+    cursor: pointer;
+}
+.fas:hover{
+    color: white;
+}
+.fab:hover{
+    color: white;
+}
+.instart{
+    color: rgb(227, 112, 112);
+}
+.toktok,.email{
+    color: white;
+}
+.email:hover{
+    color: rgb(133, 133, 255);
+}
+.toktok:hover{
+    color: rgb(133, 133, 255);
+}
+a{
+    text-decoration: none;
+}
+
+/* .text_copy{
+    padding-top: 3rem;
+    font-size: 1rem;
+} */
+.box_footer h4{
+    padding-top: 3rem;
+    font-size: 1.2rem;
+    color: rgba(236, 224, 224, 0.664);
+}
+.box_footer h3{
+    margin-left: 3.5rem;
+}
+.box_footer h4 span{
+    color: white;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.youtubb{
+    color: red
+}
+
+/* Medai Responsive  */
+@media only screen and (max-width: 600px) {
+    .input{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1;
+        font-size: 0.8rem;
+    }
+    .navbar ul{
+        margin-top: 1rem;
+    }
+    .url{
+
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    .navbar ul li{
+
+        margin: 0px 5px 0px 5px;
+    }
+    .navbar img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .fa-solid{
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        float: left;
+        opacity: 1;
+        font-size: 2rem;
+    }
+    /* <!-- component of list  --> */
+    .component{
+        width: 100%;
+        
+    }
+    .compoBox{
+        width: 97%;
+        height: 17rem;
+    }
+    .compoBox h2{
+        color:white;
+    }
+    .compoBox h3{
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        margin-top: 3.5rem;
+        margin-left: 2rem;
+        color: rgba(120, 228, 223, 0.644);
+    }
+    .marginleft{
+        font-family: sans-serif;
+    }
+    .discount{
+        width: 3rem;
+        height: 3rem;
+        margin-top: 12rem;
+        margin-left: 10px;
+    }
+    .discount h4{
+        font-size: 1rem;
+    }
+
+    /* <!-- component new  --> */
+    .discripNew{
+        width: 100%;
+        height: 3rem;
+        background-color: black;
+    }
+    .controllnew{
+        width: 100%;
+
+    }
+    .newProduct{
+        width: 97%;
+        height: 23rem;
+        padding: 5px;
+        box-shadow: 3px white;
+    }
+    .newprice h3{
+        color: white;
+    }
+    .newdescription h3{
+        color: white;
+    }
+    
+    /* <!-- picture about saler  -->  */
+
+    .pictureSaler{
+        width: 100%;
+        padding: 0;
+    }
+    .pictureSaler h3{
+        font-family: 'Lora', serif;
+        font-size: 1.2rem;
+        background-color: rgba(1, 3, 3, 0.596);
+        color: rgba(255, 255, 255, 0.792);
+        border-radius: 1rem;
+        width: 98%;
+    }
+    .pictureBox{
+        width: 100%;
+    }
+    
+    /* <!-- Picture on fack book   --> */
+
+    .pictureFackbook{
+        width: 100%;
+    }
+    .picturefb{
+        width:100%;
+        /* overflow: hidden; */
+        border-radius: 50%;
+    }
+    .picturefb img{
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgb(9, 11, 13);
+    }
+    
+    /* <!-- contact  --> */
+    .controll_footer{
+        width: 100%;
+        height: 10.5rem;
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer h3{
+        padding-top: 0;
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+    }
+    .box_footer{
+        width: 100%;
+        padding-top: 0;
+        margin: 0;
+    }
+    .box_footer p{
+        margin: 0;
+        font-size: 1.1rem;
+        font-family: 'PT Serif', serif;
+    }
+    .box_footer a{
+        margin: 3% 0% 0% 8%;
+        font-size: 2rem;
+        padding: 0;
+    }
+    .box_footer h4{
+        padding: 1rem 0 0 0.5rem;
+        margin: 0;
+        color: grey;
+        font-size: 0.9rem;
+        padding-bottom: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Lora', serif;
+    }
+    .box_footer h3{
+        font-size: 1.5rem;
+        margin: 3px 0 5px 15px;
+    }
+}
+
+@media only screen and (min-width: 732px) and (max-width: 992px){
+  /* <!-- component of list  --> */
+  .component{
+    width: 100%;
+}
+.compoBox{
+    width: 48.8%;
+    height: 40%;
+}
+.compoBox h2{
+    color:white;
+}
+.compoBox h3{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin-top: 3.5rem;
+    margin-left: 2rem;
+    color: rgba(120, 228, 223, 0.644);
+}
+.marginleft{
+    font-family: sans-serif;
+}
+.discount{
+    width: 12%;
+    height: 12%;
+    margin-top: 85%;
+    margin-left: 4%;
+}
+.discount h4{
+    font-size: 80%;
+}
+/* <!-- component new  --> */
+
+.discripNew{
+    width: 100%;
+    height: 40%;
+    background-color: black;
+}
+.controllnew{
+    width: 100%;
+
+}
+.newProduct{
+    width: 48.3%;
+    height: 25rem;
+    padding: 5px;
+    box-shadow: 3px white;
+}
+.newprice h3{
+    color: white;
+}
+.newdescription h3{
+    color: white;
+}
+.newphoto{
+    width: 100%;
+    height: 70%;
+}
+.newphoto img{
+    width: 100%;
+    height: 100%;
+}
+.newprice{
+    width: 100%;
+    height: 10%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newprice h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.newprice h3 p{
+    margin-left:1rem;
+    color: red;
+}
+.newdescription{
+    width: 100%;
+    height: 20%;
+    /* background-color: aqua; */
+}
+  /* <!-- picture about saler  -->  */
+
+  .pictureSaler{
+    width: 100%;
+    padding: 0;
+}
+.pictureBox{
+    width: 100%;
+}
+/* <!-- Picture on fack book   --> */
+
+.pictureFackbook{
+    width: 100%;
+}
+.picturefb{
+    width:48.7%;
+    height: 25rem;
+    /* overflow: hidden; */
+    border-radius: 50%;
+}
+.picturefb img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgb(9, 11, 13);
+}
+/* <!-- contact  --> */
+.controll_footer{
+    width: 100%;
+    height: 13rem;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer h3{
+    padding-top: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+}
+.box_footer{
+    width: 100%;
+    padding-top: 0;
+    margin: 0;
+}
+.box_footer p{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.box_footer a{
+    margin: 1% 0% 0% 11%;
+    font-size: 3rem;
+    padding: 0;
+}
+.box_footer h4{
+    padding: 0.5rem 0 0 0.5rem;
+    margin: 0;
+    color: grey;
+    font-size: 1rem;
+    padding-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+}
